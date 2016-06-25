@@ -1,2 +1,2 @@
-# eodp
-EODP: Exploring Open Data Policies
+# EODP: Exploring Open Data Policies
+
