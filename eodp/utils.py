@@ -15,7 +15,7 @@ def get_all_policies(text_only=False):
     files = []
     for name in file_names:
         with open(DATA_FOLDER + name) as openfile:
-            text = openfile.read().decode('utf-8')
+            text = openfile.read().decode('utf-8', 'replace')
             info = {"name": name,
                     "text": text}
             files.append(text if text_only else info)
