@@ -2,7 +2,8 @@ import re
 
 # detect multiple cities?
 
-# parts: 0-metadata, 1-preamble, 2-main, 3-epilogue
+# Parts: 0 front matter, 1 preamble, 2 transition,
+# 2-main, 3-epilogue
 
 # 'whereas' sections
 # numbered sections (with and without the word 'section')
