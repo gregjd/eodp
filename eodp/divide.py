@@ -35,7 +35,17 @@ def _divide(string, list_of_points):
 
 def _find_all_breaks(string):
 
-    return [_find_break(regex, string) for regex in BREAKS]
+    #return [_find_break(regex, string) for regex in BREAKS]
+    break_list = []
+    for regex in BREAKS:
+        try:
+            br = _find_break(regex, string)
+        except AttributeError:
+            pass
+        else:
+            break_list.append(br)
+
+    return break_list
 
 def _find_break(regex, string):
 
